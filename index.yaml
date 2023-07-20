@@ -1,0 +1,95 @@
+apiVersion: v1
+entries:
+  nginx:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 1.23.2
+    created: "2023-07-20T09:58:10.6231762+03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NGINX Open Source is a web server that can be also used as a reverse
+      proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due
+      to its ability to provide faster content.
+    digest: bf48095e6ed7affee8c55458c4c1e92ee2bc8b0c48258c058f7d794a8d2c28b6
+    home: https://github.com/bitnami/charts/tree/main/bitnami/nginx
+    icon: https://bitnami.com/assets/stacks/nginx/img/nginx-stack-220x234.png
+    keywords:
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: nginx
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/nginx
+    - https://www.nginx.org
+    urls:
+    - nginx-13.2.13.tgz
+    version: 13.2.13
+  vault:
+  - apiVersion: v2
+    appVersion: 1.8.3
+    created: "2023-07-20T09:58:10.6263001+03:00"
+    description: Official HashiCorp Vault Chart
+    digest: 3c384c18d7a4b9c159c75026bc1a1adc22a5d10c35e60c30772807cf8a97b0b4
+    home: https://www.vaultproject.io
+    icon: https://github.com/hashicorp/vault/raw/f22d202cde2018f9455dec755118a9b84586e082/Vault_PrimaryLogo_Black.png
+    keywords:
+    - vault
+    - security
+    - encryption
+    - secrets
+    - management
+    - automation
+    - infrastructure
+    kubeVersion: '>= 1.14.0-0'
+    name: vault
+    sources:
+    - https://github.com/hashicorp/vault
+    - https://github.com/hashicorp/vault-helm
+    - https://github.com/hashicorp/vault-k8s
+    - https://github.com/hashicorp/vault-csi-provider
+    urls:
+    - vault-0.16.1.tgz
+    version: 0.16.1
+  xray:
+  - apiVersion: v2
+    appVersion: 3.78.10
+    created: "2023-07-20T09:58:10.637405+03:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.jfrog.io/
+      version: 10.3.18
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.jfrog.io/
+      version: 11.9.3
+    description: Universal component scan for security and license inventory and impact
+      analysis
+    digest: 4b9ebece1ff32bbecb1e08af08495846bf2f4409c136a9dbb6dbbd557fadbcc0
+    home: https://www.jfrog.com/xray/
+    icon: https://raw.githubusercontent.com/jfrog/charts/master/stable/xray/logo/xray-logo.png
+    keywords:
+    - xray
+    - jfrog
+    kubeVersion: '>= 1.14.0-0'
+    maintainers:
+    - email: installers@jfrog.com
+      name: Chart Maintainers at JFrog
+    name: xray
+    sources:
+    - https://github.com/jfrog/charts
+    type: application
+    urls:
+    - xray-103.78.10.tgz
+    version: 103.78.10
+generated: "2023-07-20T09:58:10.6206931+03:00"
