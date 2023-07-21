@@ -5,7 +5,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.23.2
-    created: "2023-07-20T10:29:43.051536+03:00"
+    created: "2023-07-21T16:18:02.8607608+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -32,14 +32,14 @@ entries:
     - https://github.com/bitnami/containers/tree/main/bitnami/nginx
     - https://www.nginx.org
     urls:
-    - nginx-13.2.13.tgz
+    - https://github.com/abbas916990/helm-charts-test/nginx-13.2.13.tgz
     version: 13.2.13
   redis:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 6.0.12
-    created: "2023-07-20T10:29:43.0549365+03:00"
+    created: "2023-07-21T16:18:02.8643509+03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -66,12 +66,12 @@ entries:
     - https://github.com/bitnami/bitnami-docker-redis
     - http://redis.io/
     urls:
-    - redis-12.10.1.tgz
+    - https://github.com/abbas916990/helm-charts-test/redis-12.10.1.tgz
     version: 12.10.1
   vault:
   - apiVersion: v2
     appVersion: 1.8.3
-    created: "2023-07-20T10:29:43.0578313+03:00"
+    created: "2023-07-21T16:18:02.8674057+03:00"
     description: Official HashiCorp Vault Chart
     digest: 3c384c18d7a4b9c159c75026bc1a1adc22a5d10c35e60c30772807cf8a97b0b4
     home: https://www.vaultproject.io
@@ -92,12 +92,12 @@ entries:
     - https://github.com/hashicorp/vault-k8s
     - https://github.com/hashicorp/vault-csi-provider
     urls:
-    - vault-0.16.1.tgz
+    - https://github.com/abbas916990/helm-charts-test/vault-0.16.1.tgz
     version: 0.16.1
   xray:
   - apiVersion: v2
     appVersion: 3.78.10
-    created: "2023-07-20T10:29:43.0678327+03:00"
+    created: "2023-07-21T16:18:02.8794052+03:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -124,6 +124,6 @@ entries:
     - https://github.com/jfrog/charts
     type: application
     urls:
-    - xray-103.78.10.tgz
+    - https://github.com/abbas916990/helm-charts-test/xray-103.78.10.tgz
     version: 103.78.10
-generated: "2023-07-20T10:29:43.0489954+03:00"
+generated: "2023-07-21T16:18:02.8577877+03:00"
